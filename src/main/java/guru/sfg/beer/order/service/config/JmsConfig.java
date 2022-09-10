@@ -10,6 +10,7 @@ import org.springframework.jms.support.converter.MessageType;
 public class JmsConfig {
     public static final String VALIDATE_ORDER_QUEUE = "validate-order";
     public static final String VALIDATE_ORDER_RESPONSE_QUEUE = "validate-order-response";
+    public static final String ALLOCATE_ORDER_QUEUE = "allocate-order";
     @Bean // serialize message content to json using TextMessage
     public MessageConverter jacksonJmsMessageConverter() {
         MappingJackson2MessageConverter converter = new MappingJackson2MessageConverter();
